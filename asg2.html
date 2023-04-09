@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABLES AND MARGINS</title><br>
+    <style>
+        body{
+            margin-top: 150px;
+            margin-bottom: 150px;
+            margin-left: 150px;
+            margin-right: 150px;
+            border: 6px solid green;
+            border-style: inherit;
+            padding: 75px;
+            position: relative;
+            
+        }
+        body::before{
+            content: "";
+            position: absolute ;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display:inline block;
+            background-size: cover;
+            background-image: url("840360.jpg");
+            opacity: 0.5;
+            box-sizing: border-box;
+        }
+        #table{
+            margin-right: 250px;
+            margin-left: 100px;
+            position: relative;
+            border: 5px solid orange;
+            border-style: dashed;
+            border-radius: 50px;
+            padding-left: 50px;
+            padding-bottom: 40px;
+            }
+        table,tr,th,td{
+            border: 2px solid rgb(150, 143, 143);
+        }
+        .ordered{
+            margin-left: 375px;
+            margin-right: 375px;
+            padding-left: 100px;
+            border: 5px solid rgb(0, 0, 0);
+            border-style: inherit;
+            border-radius: 20px;
+            
+        }
+        .unordered{
+            margin-left: 250px;
+            margin-right: 100px;
+            padding-left: 600px;
+            padding-bottom: 70px;
+            border: 5px solid rgb(167, 60, 167);
+            border-style: double;
+            border-radius: 20px;
+        }
+        a{
+            font-size: 40px;
+            padding-left:350px;
+            color: rgb(57, 89, 117);
+        }
+        hr{
+            border: 2px solid red;
+            border-style: groove;
+        }
+        .size{
+            font-size: 20px;
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://mgit.ac.in/">MGIT OFFICIAL WEBSITE</a>
+    <hr><br><br><br>
+
+    <div id="table">
+        <h3><u>STUDENT DETAILS</u></h2>
+        <table class="size">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Percentage</th>
+                <th>Roll No</th>
+            </tr>
+            <tr>
+                <td>Lohith</td>
+                <td>Marni</td>
+                <td>99%</td>
+                <td>593</td>
+            </tr>
+            <tr>
+                <td>Matheth</td>
+                <td>Abhirami</td>
+                <td>94%</td>
+                <td>594</td>
+            </tr>
+            <tr>
+                <td>Adithi</td>
+                <td>Venkat</td>
+                <td>95%</td>
+                <td>562</td>
+            </tr>
+        </table>
+
+    </div><br>
+
+    <div class="ordered">
+        <h2><u>CARS</u></h2>
+        <ol class="size" type="i">
+            <li>BENZ</li>
+            <li>AUDI</li>
+            <li>FERRARI</li>
+            <li>FORD</li>
+            <li>PORSCHE</li>
+            <li>MAHINDRA</li>
+        </ol>
+    </div>
+    <br>
+    <div class="unordered">
+        <h2><u>LANGUAGES</u></h2>
+        <ul class="size" type="circle">
+            <li>Java</li>
+            <li>PYTHON</li>
+            <li>C</li>
+            <li>C++</li>
+        </ul>    
+    </div>
+</body>
+</html>
